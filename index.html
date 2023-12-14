@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer | Home </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-Roboto">
+
+    <nav class="bg-[#f7f1ff] fixed top-0 w-full z-50 px-4 py-4">
+        <div class="container mx-auto lg:px-10  flex justify-between items-center">
+            <div>
+                <a href="#" class="text-black text-xl font-extrabold sm:py-12">Influencer Products</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#home" class="text-black text-lg font-bold">Home</a>
+                <a href="#about" class="text-black text-lg font-bold">About</a>
+                <a href="#products" class="text-black text-lg font-bold">Products</a>
+                <a href="#contact" class="text-black text-lg font-bold">Contact</a>
+                <button class="bg-[#e02c6d] text-white rounded-2xl p-2 font-bold">
+                    <a href="registration-form.html">Sign Up</a>
+                </button>
+            </div>
+            <!-- Mobile Menu Button (hidden on larger screens) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-black">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu (hidden on larger screens) -->
+    <div id="mobile-menu" class="md:hidden fixed inset-0 bg-[#e02c6d] h-80 bg-opacity-100 z-50 hidden p-4">
+        <div class="flex justify-end p-4">
+            <button id="close-mobile-menu" class="text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center space-y-4">
+            <a href="#home" class="text-black text-lg font-bold">Home</a>
+            <a href="#about" class="text-black text-lg font-bold">About</a>
+            <a href="#products" class="text-black text-lg font-bold">Products</a>
+            <a href="#contact" class="text-black text-lg font-bold">Contact</a>
+            <button class="bg-[#e02c6d] text-white rounded-2xl p-2 font-bold">
+                <a href="registration-form.html">Sign Up</a>
+            </button>
+        </div>
+    </div>
+
+    <!-- banner section  -->
+    <div class="container mx-auto lg:px-10 lg:pt-12 h-full" id="home">
+        <div class="hero-section p-4 flex flex-col lg:flex-row justify-between items-center" id="home">
+            <div class="left-box lg:w-1/2 md:w-1/2 xl:w-1/2 w-full lg:order-1 md:order-1 xl:order-1 order-2">
+                <div class="paragraph lg:text-left">
+                    <h2 class="lg:text-6xl font-bold text-[#e02c6d] text-4xl"> Start your Journey as Influencer
+                    </h2>
+                    <br>
+                    <p class=" lg:w-10/12 text-justify text-[#e02c6d] font-bold text-lg">
+                        Learn with fun!
+                    </p>
+                    <p class=" lg:w-10/12 text-justify text-[#484950] font-semibold text-md">You will find your
+                        favourite gadgets on our website.
+                    </p>
+                    <br>
+                    <a href="#"
+                        class="sign-in-btn bg-[#e02c6d] text-white p-2 active:bg-[#027c55] rounded-2xl font-bold">
+                        Order Now</a>
+                </div>
+            </div>
+            <div class="right-box lg:w-1/2 md:w-1/2 xl:w-1/2 w-full pt-12 lg:order-2 md:order-2 xl:order-2 order-1">
+                <img src="images/banner.png" alt="" class="w-full lg:w-600px">
+            </div>
+        </div>
+    </div>
+<!-- banner -->
+<div class="container mx-auto lg:px-40 lg:py-32 py-12 h-full ">
+<div class="flex flex-wrap items-center justify-center gap-12 shadow-lg p-4">
+    <div>
+        <img src="logos/Alibaba.svg" alt="">
+    </div>
+    <div>
+        <img src="logos/Amazon.svg" alt="">
+    </div>
+    <div>
+        <img src="logos/Daraz.pk Logo.svg" alt="">
+    </div>
+    <div>
+        <img src="logos/Rakuten.svg" alt="">
+    </div>
+    <div>
+        <img src="logos/Ebay.svg" alt="">
+    </div>
+    <div>
+        <img src="logos/Target.svg" alt="">
+    </div>
+    <div>
+        <img src="logos/Walmart.svg" alt="">
+    </div>
+</div>
+    </div>
+
+<!-- popular collection -->
+<div class="container mx-auto lg:px-10 p-4" >
+    <div class="text-center text-3xl text-[#000000] font-bold " id="products">
+       Popular Collection
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-4 p-4 py-20">
+
+        <!-- card-1 -->
+        <div class="flex items-center justify-center">
+            <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white p-4">
+                <div class="flex items-center justify-center">
+                    <img src="images/tripod.png" class="border-4" alt="">
+                </div>
+                <div class="flex items-center justify-between py-4">
+                    <div>
+                        <div class="text-2xl text-[#000000] font-bold">Flex Tripod</div>
+                        <div class="flex items-center">
+                            <div class="text-md font-bold text-[#e02c6d]"> Price: 3000 Tk</div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="sign-in-btn bg-[#e02c6d] text-white p-2 active:bg-[#000000] rounded-md font-bold">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card-2 -->
+        <div class="flex items-center justify-center">
+            <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white	p-4">
+                <div class="flex items-center justify-center">
+                    <img src="images/mic.png" class="border-4" alt="">
+                </div>
+                <div class="flex items-center justify-between py-4">
+                    <div>
+                        <div class="text-2xl text-[#000000] font-bold">Microphone </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-clock text-[#437c55] font-bold"></i>
+                            <div class="text-md ms-2 font-bold text-[#e02c6d]"> Price: 4000 Tk </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="sign-in-btn bg-[#e02c6d] text-white p-2 active:bg-[#000000] rounded-md font-bold">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card-3 -->
+        <div class="flex items-center justify-center">
+            <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white	p-4">
+                <div class="flex items-center justify-center">
+                    <img src="images/airpod.png" class="border-4" alt="">
+                </div>
+                <div class="flex items-center justify-between py-4">
+                    <div>
+                        <div class="text-2xl text-[#000000] font-bold">Airbuds</div>
+                        <div class="flex items-center">
+                            <div class="text-md  font-bold text-[#e02c6d]">Price: 2500 Tk </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="sign-in-btn bg-[#e02c6d] text-white p-2 active:bg-[#000000] rounded-md font-bold">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card-4 -->
+        <div class="flex items-center justify-center">
+            <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white	p-4">
+                <div class="flex items-center justify-center">
+                    <img src="images/drone.png" class="border-4" alt="">
+                </div>
+                <div class="flex items-center justify-between py-4">
+                    <div>
+                        <div class="text-2xl text-[#000000] font-bold">Drone</div>
+                        <div class="flex items-center">
+                            <div class="text-md  font-bold text-[#e02c6d]">Price: 60000 Tk </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="sign-in-btn bg-[#e02c6d] text-white p-2 active:bg-[#000000] rounded-md font-bold">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card-5 -->
+        <div class="flex items-center justify-center">
+            <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white p-4">
+                <div class="flex items-center justify-center">
+                    <img src="images/lights.png" class="border-4" alt="">
+                </div>
+                <div class="flex items-center justify-between py-4">
+                    <div>
+                        <div class="text-2xl text-[#000000] font-bold">Light SetUp</div>
+                        <div class="flex items-center">
+                            <div class="text-md  font-bold text-[#e02c6d]">Price: 7000 Tk </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="sign-in-btn bg-[#e02c6d] text-white p-2 active:bg-[#000000] rounded-md font-bold">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card-6 -->
+        <div class="flex items-center justify-center">
+            <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white	p-4">
+                <div class="flex items-center justify-center">
+                    <img src="images/setup.png" class="border-4" alt="">
+                </div>
+                <div class="flex items-center justify-between py-4">
+                    <div>
+                        <div class="text-2xl text-[#000000] font-bold">Photoshoot Setup</div>
+                        <div class="flex items-center">
+                            <div class="text-md  font-bold text-[#e02c6d]">Price: 12000 Tk </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="sign-in-btn bg-[#e02c6d] text-white p-2 active:bg-[#000000] rounded-md font-bold">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card-7 -->
+        <div class="flex items-center justify-center">
+            <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white	p-4">
+                <div class="flex items-center justify-center">
+                    <img src="images/single-light.png" class="border-4" alt="">
+                </div>
+                <div class="flex items-center justify-between py-4">
+                    <div>
+                        <div class="text-2xl text-[#000000] font-bold">Green Screen</div>
+                        <div class="flex items-center">
+                            <div class="text-md  font-bold text-[#e02c6d]">Price: 4000 Tk </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="sign-in-btn bg-[#e02c6d] text-white p-2 active:bg-[#000000] rounded-md font-bold">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card-8 -->
+        <div class="flex items-center justify-center">
+            <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white	p-4">
+                <div class="flex items-center justify-center">
+                    <img src="images/camera.png" class="border-4" alt="">
+                </div>
+                <div class="flex items-center justify-between py-4">
+                    <div>
+                        <div class="text-2xl text-[#000000] font-bold">Blogging Camera</div>
+                        <div class="flex items-center">
+                            <div class="text-md  font-bold text-[#e02c6d]">Price: 80000 Tk </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="sign-in-btn bg-[#e02c6d] text-white p-2 active:bg-[#000000] rounded-md font-bold">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card-9 -->
+        <div class="flex items-center justify-center">
+            <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white	p-4">
+                <div class="flex items-center justify-center">
+                    <img src="images/action.png" class="border-4" alt="">
+                </div>
+                <div class="flex items-center justify-between py-4">
+                    <div>
+                        <div class="text-2xl text-[#000000] font-bold">Action Camera</div>
+                        <div class="flex items-center">
+                            <div class="text-md  font-bold text-[#e02c6d]">Price: 25000 Tk </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="sign-in-btn bg-[#e02c6d] text-white p-2 active:bg-[#000000] rounded-md font-bold">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <details>
+            <summary class="font-bold">See More</summary>
+         
+            <div class="flex items-center justify-center">
+                <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white	p-4">
+                    <div class="flex items-center justify-center">
+                        <img src="images/gear.jpg" class="border-4" alt="">
+                    </div>
+                    <div class="flex items-center justify-between py-4">
+                        <div>
+                            <div class="text-2xl text-[#000000] font-bold">Gadget Setup</div>
+                            <div class="flex items-center">
+                                <div class="text-md  font-bold text-[#e02c6d]">Price: 20000 Tk </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class="sign-in-btn bg-[#e02c6d] text-white p-2 active:bg-[#000000] rounded-md font-bold">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </details>
+    </div>
+</div>
+
+<!-- feature porducts -->
+<div class="container mx-auto lg:px-40 lg:py-12 py-4 p-4" id="about">
+    <div class="text-center text-3xl text-[#000000] font-bold ">
+       Feature Products
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap- p-4 py-20">
+        <div class="img">
+            <img src="images/images.jpg" alt="">
+        </div>
+    <div class="block">
+        <div class="text-2xl font-bold text-[#0531bf]"
+        ">Explore the latest trending products.    </div>
+        <div class="text-md font-bold text-[#484950] py-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rem quia dignissimos voluptatum fuga veritatis minima odit odio aut alias laborum blanditiis error sit tenetur voluptas esse quos reiciendis reprehenderit perspiciatis facere, provident unde at. Voluptas aliquid vitae quas laboriosam!
+        </div>
+    </div>
+    </div>
+    </div>
+
+<!-- footer section start -->
+    <footer class="bg-[#041e42] text-white py-8" id="contact">
+        <div class="container mx-auto lg:px-10 p-4 lg:pt-8 flex flex-wrap justify-center">
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 mb-6 px-4">
+                <h2 class="text-lg font-bold mb-4">Address</h2>
+                <p>123 Street, City</p>
+                <p>Country, ZIP Code</p>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 mb-6 px-4">
+                <h2 class="text-lg font-bold mb-4">Contact</h2>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 mb-6 px-4">
+                <h2 class="text-lg font-bold mb-4">Join Us</h2>
+                <p>Stay updated on our latest offers and news.</p>
+                <!-- Add your join us form or social media links here -->
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 mb-6 px-4">
+                <h2 class="text-lg font-bold mb-4">Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="text-center text-bold text-md">&copy; 2024 Aminul Islam | all rights reserved</div>
+        </div>
+    </footer>
+    
+<!-- footer section end -->
+
+
+
+
+
+
+    <script>
+        document
+            .getElementById("mobile-menu-btn")
+            .addEventListener("click", function () {
+                document.getElementById("mobile-menu").classList.toggle("hidden");
+            });
+
+        document
+            .getElementById("close-mobile-menu")
+            .addEventListener("click", function () {
+                document.getElementById("mobile-menu").classList.add("hidden");
+            });
+    </script>
+</body>
+
+</html>
